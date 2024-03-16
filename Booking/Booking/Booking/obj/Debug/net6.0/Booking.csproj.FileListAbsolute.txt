@@ -1,0 +1,141 @@
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\appsettings.json
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Booking.exe
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Booking.deps.json
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Booking.runtimeconfig.json
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Booking.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Booking.pdb
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Humanizer.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\Booking.csproj.AssemblyReference.cache
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\Booking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\Booking.AssemblyInfoInputs.cache
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\Booking.AssemblyInfo.cs
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\Booking.csproj.CoreCompileInputs.cache
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\Booking.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\Booking.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\staticwebassets\msbuild.Booking.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\staticwebassets\msbuild.build.Booking.props
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Booking.props
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Booking.props
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\scopedcss\bundle\Booking.styles.css
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\Booking.csproj.CopyComplete
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\Booking.dll
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\refint\Booking.dll
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\Booking.pdb
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\Booking.genruntimeconfig.cache
+C:\Users\SHD\source\repos\Booking\Booking\obj\Debug\net6.0\ref\Booking.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\SHD\source\repos\Booking\Booking\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\appsettings.json
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Booking.exe
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Booking.deps.json
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Booking.runtimeconfig.json
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Booking.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Booking.pdb
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\Booking.csproj.AssemblyReference.cache
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\Booking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\Booking.AssemblyInfoInputs.cache
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\Booking.AssemblyInfo.cs
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\Booking.csproj.CoreCompileInputs.cache
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\Booking.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\Booking.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\Booking.sourcelink.json
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\staticwebassets\msbuild.Booking.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\staticwebassets\msbuild.build.Booking.props
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Booking.props
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Booking.props
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\scopedcss\bundle\Booking.styles.css
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\Booking.csproj.CopyComplete
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\Booking.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\refint\Booking.dll
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\Booking.pdb
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\Booking.genruntimeconfig.cache
+C:\Users\Amogus\Documents\Zalo Received Files\Booking\Booking\Booking\obj\Debug\net6.0\ref\Booking.dll

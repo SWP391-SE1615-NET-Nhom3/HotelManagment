@@ -1,0 +1,161 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="~/css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>LOGO .</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html" class="link active">Trang chủ</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <!----------------------------- Form box ----------------------------------->
+        <div class="form-box">
+
+            <!------------------- login form -------------------------->
+
+            <div class="login-container" id="login">
+                <div class="top">
+
+                    <header>Đăng nhập</header>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="username" id="username" class="input-field" placeholder="Tên người dùng">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" id="password" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" onclick="submitForm()" class="submit" value="Sign In">
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <script>
+
+        function myMenuFunction() {
+            var i = document.getElementById("navMenu");
+
+            if (i.className === "nav-menu") {
+                i.className += " responsive";
+            } else {
+                i.className = "nav-menu";
+            }
+        }
+
+    </script>
+    <script>
+        var a = document.getElementById("loginBtn");
+        var b = document.getElementById("registerBtn");
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        function login() {
+            x.style.left = "4px";
+            y.style.right = "-520px";
+            a.className += " white-btn";
+            b.className = "btn";
+            x.style.opacity = 1;
+            y.style.opacity = 0;
+        }
+        function register() {
+            x.style.left = "-510px";
+            y.style.right = "5px";
+            a.className = "btn";
+            b.className += " white-btn";
+            x.style.opacity = 0;
+            y.style.opacity = 1;
+        }
+
+        function submitForm() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const data = {
+                email: username,
+                password: password,
+            };
+            fetch('https://localhost:7081/api/Account/Login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(errorData => {
+                            alert(errorData);
+                            throw new Error('Request failed');
+                        });
+                    } else {
+                        return response.blob(); // Trả về dữ liệu dưới dạng Blob
+                    }
+                })
+                .then(blob => {
+                    const reader = new FileReader();
+                    reader.onload = function () {
+                        const token = reader.result;
+                        const decode = token => decodeURIComponent(atob(token.split('.')[1].replace('-', '+').replace('_', '/')).split('').map(c => `%${('00' + c.charCodeAt(0).toString(16)).slice(-2)}`).join(''));
+                        const user = decode(token);
+                        const jsonObject = JSON.parse(user);
+                        sessionStorage.setItem("user",jsonObject);
+                        sessionStorage.setItem("token",token);
+                        sessionStorage.setItem("gmail",jsonObject.unique_name);
+                        sessionStorage.setItem("userId",jsonObject.ID);
+                        sessionStorage.setItem("role",jsonObject.role);
+
+                        console.log(jsonObject)
+                        if (jsonObject.role == "1") {
+                            var url = 'User/ListAccount';
+                            window.location.href = url;
+                        } else if (jsonObject.role == "2") {
+                            var url = 'HomeStay/listhomestay';
+                            window.location.href = url;
+                        } else {
+                            var url = 'User/profileuser';
+                         window.location.href = url;
+                        }
+                    };
+                    reader.readAsText(blob);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+    </script>
+
+</body>
+
+</html>

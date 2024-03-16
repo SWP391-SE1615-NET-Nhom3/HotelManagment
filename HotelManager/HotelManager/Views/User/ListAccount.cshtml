@@ -1,0 +1,242 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Project</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" />
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script src="~/js/script.js"></script>
+    
+    <script defer type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+</head>
+
+<body>
+    <div class="containers" >
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>LOGO .</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#" class="link active">Home</a></li>
+                    
+                  
+                    <li><a asp-controller="HomeStay" asp-action="ListHomeStaybyAdmin" class="link active">HomeStay</a></li>
+                    <li><a href="../HomeStay/dashboard" class="link active">Dashboard</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <a> <button class="btn white-btn" id="loginBtn" onclick="logout()">Logout</button></a>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+        <h2>Hotel Managment</h2>
+
+    </section>
+    <section id="data">
+        <div class="container">
+            <a href="AddAcount"><button class="btn btn-primary">Thêm account</button></a>
+            <table id="example" class="table table-striped" style="width:100%">
+
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                            <th>Email</th>
+                        <th>UserName</th>
+                        
+                        <th>Phone</th>
+                            <th>Address</th>
+
+                        <th>Role</th>
+                        <th>Active</th>
+
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+
+
+            </table>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-col">
+            <h3>Top Sản phẩm</h3>
+            <li>Khóa học</li>
+            <li>Giới thiệu</li>
+            <li>Sự kiện</li>
+
+        </div>
+        <div class="footer-col">
+            <h3>Top Sản phẩm</h3>
+            <li>Khóa học</li>
+            <li>Giới thiệu</li>
+            <li>Sự kiện</li>
+
+        </div>
+        <div class="footer-col">
+            <h3>Top Sản phẩm</h3>
+            <li>Khóa học</li>
+            <li>Giới thiệu</li>
+            <li>Sự kiện</li>
+
+        </div>
+        <div class="footer-col">
+            <h3>Truyền thông</h3>
+            <li>Youtube</li>
+            <li><img class="eduma" src="https://eduma.vn/wp-content/uploads/2019/02/VNNIC.png"></li>
+
+            <li></li>
+        </div>
+    </footer>
+    </div>
+    <script>
+        const jwt = sessionStorage.getItem("user");
+        const token = sessionStorage.getItem("token");
+     
+        if (!token) {
+            window.location.href = "/";
+        }
+        $(document).ready(function () {
+            // Tạo một yêu cầu GET đến API
+            fetch('https://localhost:7081/api/Account/ManageAccountAdmin', {
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(errorData => {
+                            alert(errorData)
+                        });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Lấy tham chiếu đến tbody
+                    const tableBody = document.getElementById('tableBody');
+                    tableBody.innerHTML = '';
+                    data.forEach(item => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `<td>${item.id}</td>
+                                    <td>${item.email}</td>
+                                                    <td>${item.username}</td>
+                                    <td>${item.phone}</td>
+                                    <td>${item.address}</td>
+                                           <td>
+          ${item.roleId === 1 ? 'Admin' : (item.roleId === 2 ? 'Owner' : (item.roleId === 3 ? 'User' : 'unknown'))}
+        </td>
+                          <td>
+                    ${item.status == '0' ? `<i style="cursor:pointer" class="fas fa-toggle-on" onClick="toggleKeyOn(${item.id})"></i>` : `<i style="cursor:pointer" class="fas fa-toggle-off" onClick="toggleKeyOff(${item.id})"></i>`}
+                </td>`
+                        tableBody.appendChild(row);
+                    });
+                    $('#example').DataTable();
+                })
+
+                .catch(error => {
+                    console.error('Error fetching API:', error);
+                });
+
+        });
+
+
+
+        function toggleKeyOn(id) {
+            const apiUrl = 'https://localhost:7081/api/Account/ActionAccount';
+            const data = {
+                account_id: id,
+                status: 1,
+            };
+            console.log(data);
+            fetch(apiUrl, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(errorData => {
+                            alert(errorData)
+                        });
+                    }
+
+                })
+                .then(responseData => {
+                    console.log('API PUT thành công:', responseData);
+                    window.location.reload();
+                })
+                .catch(error => {
+                    console.error('Có lỗi khi gọi API PUT:', error);
+                    // Xử lý lỗi nếu cần
+                });
+        }
+        function toggleKeyOff(id) {
+            const apiUrl = 'https://localhost:7081/api/Account/ActionAccount';
+            const data = {
+                account_id: id,
+                status: 0,
+            };
+
+            console.log(data);
+            fetch(apiUrl, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(errorData => {
+                            alert(errorData)
+                        });
+                    }
+
+                })
+                .then(responseData => {
+                    console.log('API PUT thành công:', responseData);
+                    window.location.reload();
+                })
+                .catch(error => {
+                    console.error('Có lỗi khi gọi API PUT:', error);
+                    // Xử lý lỗi nếu cần
+                });
+        }
+        function logout() {
+            sessionStorage.clear();
+            window.location.reload();
+        }
+    </script>
+   
+    
+
+
+</body>
+
+</html>

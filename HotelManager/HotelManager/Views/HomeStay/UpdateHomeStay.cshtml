@@ -1,0 +1,252 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Project</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+</head>
+
+<body>
+    <div class="containers">
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>LOGO .</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+
+                    <li><a href="#" class="link active">HomeStay</a></li>
+
+                </ul>
+            </div>
+            <div class="nav-button">
+                <a> <button class="btn white-btn" id="loginBtn" onclick="logout()">Logout</button></a>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <!-- Home -->
+        <section id="home">
+            <h2>Hotel Managment</h2>
+
+        </section>
+        <div class="container">
+            <form id="myForm" class="row g-3">
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Name</label>
+                    <input type="text" name="name" class="form-control" id="name">
+                </div>
+                <div class="col-md-12">
+                    <label for="inputEmail4" class="form-label">Address</label>
+                    <input type="email" name="address" class="form-control" id="address">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="inputPassword4" class="form-label">Bedroom</label>
+                    <input type="number" name="bedroom" class="form-control" id="bedroom">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputPassword4" class="form-label">Bathroom</label>
+                    <input type="number" name="bathroom" class="form-control" id="bathroom">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputAddress" class="form-label">PriceOneNight</label>
+                    <input type="number" name="priceOneNight" class="form-control" id="priceOneNight">
+                </div>
+
+                <div class="col-md-12">
+                    <label for="inputCity" class="form-label">Detail</label>
+                    <input type="text" name="detail" class="form-control" id="detail">
+                </div>
+                <div class="col-md-12">
+                    <label for="inputCity" class="form-label">Image</label>
+                    <input type="text" name="image" class="form-control" id="image">
+                </div>
+                <div class="col-md-12">
+                    <select style="width:300px" id="select-cate">
+                    </select>
+
+                </div>
+                <br>
+                <div class="col-12">
+                    <button type="submit" onclick="submitForm(event)" class="btn btn-primary">Create</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script>
+
+        const jwt = sessionStorage.getItem("user");
+        const token = sessionStorage.getItem("token");
+        const userid = sessionStorage.getItem("userId");
+        var urlParams = new URLSearchParams(window.location.search);
+        var homestayId = urlParams.get('homestayId');
+        if (!token) {
+            window.location.href = "/";
+        }
+        $(document).ready(function () {
+            // Lấy thẻ select từ DOM
+            var selectElement = document.getElementById('select-cate'); // Thay 'yourSelectElementId' bằng id của thẻ select trong HTML
+
+            fetch(`https://localhost:7081/api/Homestay/EditHomestay?id=${homestayId}`, {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json',
+                    // Bạn có thể thêm các header khác nếu cần thiết
+                },
+
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(errorData => {
+                            alert(errorData);
+                        });
+                    } else {
+                        return response.json(); // Trả về response để xử lý dữ liệu
+                    }
+                })
+                .then(responseData => {
+                  
+                    const name = document.getElementById('name');
+                    const address = document.getElementById('address');
+                    const bedroom = document.getElementById('bedroom');
+                    const bathroom = document.getElementById('bathroom');
+                    const priceOneNight = document.getElementById('priceOneNight');
+                    const detail = document.getElementById('detail');
+                    const image = document.getElementById('image');
+                    const cate_id = document.getElementById('select-cate');
+
+                    name.value = responseData.name;
+                    address.value = responseData.address;
+                    bedroom.value = parseInt(responseData.bedroom);
+                    bathroom.value = parseInt(responseData.bathroom);
+                    priceOneNight.value =parseInt(responseData.bathroom);
+                    detail.value = responseData.detail;
+                    image.value = responseData.image;
+                    cate_id.value = responseData.cate_id;
+                })
+                .catch(error => {
+                    alert('Có lỗi xảy ra');
+                    // Xử lý lỗi nếu cần
+                });
+        });
+
+        $(document).ready(function () {
+            // Lấy thẻ select từ DOM
+            var selectElement = document.getElementById('select-cate'); // Thay 'yourSelectElementId' bằng id của thẻ select trong HTML
+
+            fetch('https://localhost:7081/api/Homestay/AddHomestay', {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json',
+                    // Bạn có thể thêm các header khác nếu cần thiết
+                },
+
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(errorData => {
+                            alert(errorData);
+                        });
+                    } else {
+                        return response.json(); // Trả về response để xử lý dữ liệu
+                    }
+                })
+                .then(responseData => {
+
+                    responseData.forEach(item => {
+                        var option = document.createElement('option');
+                        option.value = item.id; // Gán giá trị của data.id cho thuộc tính value của option
+                        option.textContent = item.name; // Gán giá trị của data.name cho nội dung của option
+                        selectElement.appendChild(option);
+                    });
+                })
+                .catch(error => {
+                    alert('Có lỗi xảy ra');
+                    // Xử lý lỗi nếu cần
+                });
+        });
+
+        function submitForm(event) {
+            event.preventDefault();
+            // Lấy dữ liệu từ form
+            const name = document.getElementById('name').value;
+            const address = document.getElementById('address').value;
+            const bedroom = document.getElementById('bedroom').value;
+            const bathroom = document.getElementById('bathroom').value;
+            const priceOneNight = document.getElementById('priceOneNight').value;
+            const detail = document.getElementById('detail').value;
+            const image = document.getElementById('image').value;
+            const cate_id = document.getElementById('select-cate').value;
+
+            // Tạo đối tượng dữ liệu
+            const data = {
+                id: homestayId,
+                name: name,
+                address: address,
+                bedroom: bedroom,
+                bathroom: bathroom,
+                priceOneNight: priceOneNight,
+                detail: detail,
+                image: image,
+                owner_id: userid,
+                cate_id: cate_id,
+            };
+            console.log(data)
+            // Gọi API POST
+            fetch('https://localhost:7081/api/Homestay/EditHomestay', {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json',
+                    // Bạn có thể thêm các header khác nếu cần thiết
+                },
+                body: JSON.stringify(data),
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(errorData => {
+                            alert(errorData)
+                        });
+                    }
+                    else {
+                        alert("Update homestay thành công")
+                        window.location.reload();
+                    }
+                })
+                .then(responseData => {
+
+                })
+                .catch(error => {
+                    alert('Có lỗi xảy ra')
+                    // Xử lý lỗi nếu cần
+                });
+        }
+        function logout() {
+            sessionStorage.clear();
+            window.location.reload();
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top">
+    <div class="containers">
+    <!-- Page Wrapper -->
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>LOGO .</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="../User/ListAccount" class="link active">Home</a></li>
+                    <li><a href="../HomeStay/ListHomeStaybyAdmin" class="link active">HomeStay</a></li>
+                    <li><a href="#" class="link active">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <a> <button class="btn white-btn" id="loginBtn" onclick="logout()">Logout</button></a>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                TOTAL ACCOUNT
+                                            </div>
+                                            <div id="total-account" class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                               TOTAL HOMESTAY
+                                            </div>
+                                            <div id="total-homestay" class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                                        </div>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                               TOTAL ORDER
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div id="total-order" class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                               TOTAL PRICE
+                                            </div>
+                                            <div id="total-price" class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+
+                    
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Content Column -->
+                        <div class="col-lg-12 mb-4">
+
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">List Order HomeStay</h6>
+                                    </div>
+                                    <div id="task-progess"></div>
+                                </div>
+                        
+
+                            <!-- Color System -->
+                           
+
+                        </div>
+
+                     
+                    </div>
+
+                </div>
+            
+
+            </div>
+        
+
+        </div>
+       
+
+    </div>
+  
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    </div>
+
+    
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+   
+    <script src="~/js/sb-admin-2.min.js"></script>
+
+    
+    <script src="~/vendor/chart.js/Chart.min.js"></script>
+
+  
+    <script src="~/js/demo/chart-area-demo.js"></script>
+    <script src="~/js/demo/chart-pie-demo.js"></script>
+
+</body>
+<script>
+    const jwt = sessionStorage.getItem("user");
+    const token = sessionStorage.getItem("token");
+
+    if (!token) {
+        window.location.href = "/";
+    }
+    $(document).ready(function () {
+        // Lấy thẻ select từ DOM
+        var selectElement = document.getElementById('select-cate'); // Thay 'yourSelectElementId' bằng id của thẻ select trong HTML
+
+        fetch(`https://localhost:7081/api/Homestay/Statistic`, {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json',
+                // Bạn có thể thêm các header khác nếu cần thiết
+            },
+
+        })
+            .then(response => {
+                if (!response.ok) {
+                    return response.json().then(errorData => {
+                        alert(errorData);
+                    });
+                } else {
+                    return response.json(); // Trả về response để xử lý dữ liệu
+                }
+            })
+            .then(responseData => {
+
+                const totalaccount = document.getElementById('total-account');
+                const totalhomestay = document.getElementById('total-homestay');
+                const totalorder = document.getElementById('total-order');
+                const totalprice = document.getElementById('total-price');
+                
+
+                totalaccount.innerHTML = responseData.totalAccount;
+                totalhomestay.innerHTML = responseData.totalHomestay;
+                totalorder.innerHTML = responseData.totalOrder;
+                totalprice.innerHTML = responseData.totalPrice;
+
+                const tableBody = document.getElementById('task-progess');
+                tableBody.innerHTML = '';
+                responseData.list.forEach(item => {
+                    const card = document.createElement('div');
+                    card.classList.add('card', 'shadow', 'mb-4');
+                    const cardBody = document.createElement('div');
+                    cardBody.classList.add('card-body');
+                    const title = document.createElement('h4');
+                    title.classList.add('small', 'font-weight-bold');
+                    title.innerHTML = `${item.name} <span class="float-right">${item.totalBooking}</span>`;
+                    cardBody.appendChild(title);
+                    const progressDiv = document.createElement('div');
+                    progressDiv.classList.add('progress', 'mb-4');
+                    const progressBar = document.createElement('div');
+                    progressBar.classList.add('progress-bar', 'bg-success');
+                    progressBar.style.width = `${item.totalBooking}%`;
+                    progressBar.setAttribute('role', 'progressbar');
+                    progressBar.setAttribute('aria-valuenow', item.totalBooking);
+                    progressBar.setAttribute('aria-valuemin', '0');
+                    progressBar.setAttribute('aria-valuemax', '100');
+                    progressDiv.appendChild(progressBar);
+                    cardBody.appendChild(progressDiv);
+
+                    card.appendChild(cardBody);
+
+                    tableBody.appendChild(card);
+                });
+             
+            })
+            .catch(error => {
+                alert('Có lỗi xảy ra');
+                // Xử lý lỗi nếu cần
+            });
+    });
+    function logout() {
+        sessionStorage.clear();
+        window.location.reload();
+    }
+    
+
+</script>
+</html>
